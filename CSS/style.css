@@ -49,7 +49,7 @@ body {
       rgba(0, 0, 0, 0.6) 80.75%,
       rgba(0, 0, 0, 0.9) 97%
     ),
-    url('../img/mainBack.jpg');
+    url('../Images/mainBack.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -471,7 +471,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back1.jpg');
+    url('../Images/movie-back/back1.jpg');
 }
 
 .movie-container-2 {
@@ -481,7 +481,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back2.jpg');
+    url('../Images/movie-back/back2.jpg');
 }
 
 .movie-container-3 {
@@ -491,7 +491,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back3.jpg');
+    url('../Images/movie-back/back3.jpg');
 }
 
 .movie-container-4 {
@@ -501,7 +501,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back4.jpg');
+    url('../Images/movie-back/back4.jpg');
 }
 
 .movie-container-5 {
@@ -511,7 +511,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back5.jpg');
+    url('../Images/movie-back/back5.jpg');
 }
 
 .movie-container-6 {
@@ -521,7 +521,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back6.jpg');
+    url('../Images/movie-back/back6.jpg');
 }
 
 .movie-container-7 {
@@ -531,7 +531,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back7.jpg');
+    url('../Images/movie-back/back7.jpg');
 }
 
 .movie-container-8 {
@@ -541,7 +541,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back8.jpg');
+    url('../Images/movie-back/back8.jpg');
 }
 
 .movie-container-9 {
@@ -551,7 +551,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back9.jpg');
+    url('../Images/img99.jpg');
 }
 
 .movie-container-10 {
@@ -561,7 +561,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../img/movie-back/back10.jpg');
+    url('../Images/img1010.jpg');
 }
 
 .movie-container {
