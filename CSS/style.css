@@ -1,23 +1,19 @@
-/*
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
 :root {
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -41,12 +37,7 @@ body {
 
 .select-restrict {
   user-select: none;
-  transition-duration: 1s;
   pointer-events: none;
-}
-
-.select-restrict:hover {
-  transform: translateX(10%);
 }
 
 .hero-container {
@@ -292,7 +283,6 @@ body {
 }
 
 .lang-select-box {
-  outline: none;
   border: none;
   font-size: 1.6rem;
   font-family: inherit;
@@ -887,10 +877,6 @@ body {
 }
 
 @media screen and (min-width: 1920px) {
-  html {
-    font-size: 62.5%;
-  }
-
   .hero-container {
     padding: 0 32.25rem;
   }
@@ -906,10 +892,6 @@ body {
   }
 }
 @media screen and (max-width: 1920px) {
-  html {
-    font-size: 62.5%;
-  }
-
   .hero-content {
     max-height: 70rem;
   }
@@ -929,7 +911,6 @@ body {
   .hero-content {
     max-height: 62rem;
     min-height: 50rem;
-
     width: 55rem;
     margin-bottom: 3rem;
     transform: translateY(-5%);
@@ -1113,6 +1094,7 @@ body {
 
   .first-lang-box .lang-select-box {
     width: 5rem;
+    outline: none;
   }
 
   .first-lang-box .translate-icon {
