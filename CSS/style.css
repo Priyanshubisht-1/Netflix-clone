@@ -1,11 +1,8 @@
-:root {
-  color-scheme: only light;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  forced-color-adjust: none;
 }
 
 html {
