@@ -5,11 +5,15 @@
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+:root {
+  color-scheme: light;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -18,7 +22,6 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.4rem;
   font-weight: 500;
   background-color: #000;
   overflow-x: hidden;
@@ -34,6 +37,16 @@ body {
 .hero {
   background-color: black;
   color: #fff;
+}
+
+.select-restrict {
+  user-select: none;
+  transition-duration: 1s;
+  pointer-events: none;
+}
+
+.select-restrict:hover {
+  transform: translateX(10%);
 }
 
 .hero-container {
@@ -102,14 +115,16 @@ body {
 
 .cta-action {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.8rem;
 }
 
 .email-box {
-  background-color: rgba(22, 22, 22, 0.7);
   font-size: 1.2rem;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
   position: relative;
 }
 
@@ -131,6 +146,7 @@ body {
   font-size: 1.7rem;
   border: 0.0625rem solid rgba(128, 128, 128, 0.7);
   padding: 2.4rem 1.2rem 1.2rem 1.2rem;
+  background-color: rgba(22, 22, 22, 0.7);
 }
 
 .w-box {
@@ -138,9 +154,6 @@ body {
   color: rgb(235, 57, 66);
   font-size: 1.3rem;
   align-items: center;
-  position: absolute;
-  bottom: -50%;
-  left: 0;
 }
 
 .hide-w-box {
@@ -179,7 +192,8 @@ body {
   color: inherit;
   gap: 1.2rem;
   padding: 1.5rem 2.4rem;
-  font-size: 2.3rem;
+  font-weight: 600;
+  font-size: 2.1rem;
   background-color: rgb(229, 9, 20);
   border-radius: 4px;
   cursor: pointer;
@@ -266,15 +280,19 @@ body {
   display: flex;
   width: 11.4rem;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   position: relative;
   background-color: rgba(22, 22, 22, 0.7);
   box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.7);
+  border: none;
   border-radius: 3px;
   z-index: 2;
+  color: #fff;
 }
 
 .lang-select-box {
+  outline: none;
   border: none;
   font-size: 1.6rem;
   font-family: inherit;
@@ -282,6 +300,7 @@ body {
   font-weight: 400;
   background-color: transparent;
   padding: 0.3rem 0.8rem 0.3rem 3.2rem;
+  border-radius: 3px;
 }
 
 .lang-select-box option {
@@ -551,7 +570,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../Images/img99.jpg');
+    url('../Images/movie-back/back9.jpg');
 }
 
 .movie-container-10 {
@@ -561,7 +580,7 @@ body {
       rgba(6, 10, 23, 0) 55%
     ),
     linear-gradient(0deg, rgb(22, 22, 22) 4%, rgba(6, 10, 23, 0) 70%),
-    url('../Images/img1010.jpg');
+    url('../Images/movie-back/back10.jpg');
 }
 
 .movie-container {
@@ -780,7 +799,7 @@ body {
   left: 0;
   width: 100%;
   color: #fff;
-  padding: 2.4rem;
+  padding: 1.2rem 2.4rem;
   padding-bottom: 1.6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.952));
   transition: transform 0.4s;
@@ -868,6 +887,10 @@ body {
 }
 
 @media screen and (min-width: 1920px) {
+  html {
+    font-size: 62.5%;
+  }
+
   .hero-container {
     padding: 0 32.25rem;
   }
@@ -883,6 +906,10 @@ body {
   }
 }
 @media screen and (max-width: 1920px) {
+  html {
+    font-size: 62.5%;
+  }
+
   .hero-content {
     max-height: 70rem;
   }
@@ -1097,12 +1124,12 @@ body {
     width: auto;
   }
 
-  .heading-description {
-    margin-bottom: 1.5rem;
+  .btn--primary {
+    font-size: 1.3rem;
   }
 
-  .email-field {
-    padding-top: 1.6rem;
+  .heading-description {
+    margin-bottom: 1.5rem;
   }
 
   .hero-container,
@@ -1116,6 +1143,7 @@ body {
   }
 
   .cta-action {
+    align-items: center;
     flex-direction: column;
     width: 100%;
     gap: 1.2rem;
@@ -1154,10 +1182,6 @@ body {
   .last-cta .cta-description {
     text-align: left;
     margin-bottom: 1.8rem;
-  }
-
-  .last-cta .cta-action {
-    align-items: start;
   }
 
   .footer-links {
